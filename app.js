@@ -8,7 +8,7 @@ app.use(express.json())
 
 app.get('/user/:id',(req,resp)=>{
     resp.status(200).send({
-        status:"user with ID"+req.params.id
+        status:"user with ID:"+req.params.id
     })
 })
 
@@ -21,14 +21,14 @@ app.post('/user',(req,resp)=>{
 
 app.put('/user/:id',(req,resp)=>{
     resp.status(200).send({
-        status:"user updated with id"+req.params.id
+        status:"user updated with id:"+req.params.id
     })
 })
 
 
 app.delete('/user/:id',(req,resp)=>{
     resp.status(200).send({
-        status:"user deleted with id"+req.params.id
+        status:"user deleted with id:"+req.params.id
     })
 })
 
